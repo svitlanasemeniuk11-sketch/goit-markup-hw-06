@@ -667,10 +667,7 @@ img {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        column-gap: 24px;
-        row-gap: 72px;
-        padding-left: 108px;
-        margin: 0 auto;
+        justify-content: center;
     }
     .footer-logo {
         display: inline-block;
@@ -708,7 +705,6 @@ img {
         padding: 100px 0;
     }
     .footer-container{
-        width: 1158px;
         padding: 0 15px;
         gap: 0;
     }
