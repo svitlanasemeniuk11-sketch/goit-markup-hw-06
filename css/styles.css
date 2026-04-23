@@ -664,12 +664,12 @@ img {
 }
 @media screen and (min-width: 768px){
     .footer-container {
-        width: 584px;
         display: flex;
         flex-direction: row;
-        align-items: baseline;
         flex-wrap: wrap;
-        padding-right: 15px;
+        column-gap: 24px;
+        row-gap: 72px;
+        padding-left: 108px;
         margin: 0 auto;
     }
     .footer-logo {
@@ -678,6 +678,7 @@ img {
         text-align: left;
     }
     .footer-logo-box{
+        max-width: 264px;
         margin-right: 24px;
         margin-bottom: 0;
         text-align: left;
@@ -690,6 +691,9 @@ img {
     .footer-socials-title, 
     .footer-form-title {
         text-align: left;
+    }
+    .footer-socials-box{
+        max-width: 208px;
     }
     .footer-form{
         flex-direction: row;
