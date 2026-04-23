@@ -98,7 +98,7 @@ img {
     border: none;
         padding: 0;
 }
-.burger-icon {
+.icon-burger {
     display: block;
     fill: #2f2f37;
 }
@@ -556,7 +556,7 @@ img {
 .footer-logo {
     display: block;
     margin: 0 auto 16px auto;
-    text-align: left;
+    text-align: center;
 }
 .logo-studio-footer {
     color: #f4f4fd;
@@ -565,7 +565,7 @@ img {
 .footer-container {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     gap: 72px;
 }
 .footer-text {
@@ -997,10 +997,7 @@ letter-spacing: 0.4px;
     line-height: 1.17;
     letter-spacing: 0.04em;
     color: #8e8f99;
-    display: flex;
-    align-items: center;
     margin-bottom: 24px;
-    gap: 8px;
 }
 .custom-checkbox {
     width: 16px;
@@ -1008,6 +1005,9 @@ letter-spacing: 0.4px;
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 2px;
     display: inline-flex;
+    flex-shrink: 0;
+    margin-right: 8px;
+    vertical-align: middle;
     align-items: center;
     justify-content: center;
     fill: transparent;
