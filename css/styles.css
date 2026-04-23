@@ -39,8 +39,8 @@ img {
     padding: 0;
     margin: -1px;
     border: 0;
-    clip: rect(0 0 0 0);
-    clip-path: inset(100%);
+    clip: rect(0, 0, 0, 0);
+    clip-path: inset(50%);
     white-space: nowrap;
     overflow: hidden;
 }
@@ -217,6 +217,11 @@ img {
     padding: 72px 0;
     margin: 0 auto;
 }
+@media (min-resolution: 2dppx){
+    .hero-section{
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/hero-bg-2x.jpg");
+    }
+}
 .hero-title {
     color: #ffffff;
     text-align: center;
@@ -250,6 +255,7 @@ img {
 .hero-button:focus {
     background-color: #404bbf;
 }
+
 @media screen and (min-width: 768px) {
     .hero-section {
         padding: 112px 0;
@@ -265,7 +271,7 @@ img {
 
 @media screen and (min-width: 1158px){
     .hero-button{
-    margin: 48px auto 0;
+    margin: 0 auto 72px;
     }
 }
 /* Features Section */
@@ -455,6 +461,7 @@ img {
     width: 100%;
     max-width: 288px;
     background: #ffffff;
+    box-shadow: 0 1px 6px rgba(46, 47, 66, 0.08);
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-item:hover {
@@ -693,8 +700,7 @@ img {
     background-color: #fff;
     opacity: 0;
     visibility: hidden;
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    visibility: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .mobile-menu.is-open {
     opacity: 1;
