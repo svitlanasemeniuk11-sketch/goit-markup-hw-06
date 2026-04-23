@@ -664,15 +664,13 @@ img {
 }
 @media screen and (min-width: 768px){
     .footer-container {
-        max-width: 768px;
+        width: 584px;
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: row;
         align-items: baseline;
-        padding-left: 15px;
+        flex-wrap: wrap;
         padding-right: 15px;
         margin: 0 auto;
-        column-gap: 24px;
-        row-gap: 72px;
     }
     .footer-logo {
         display: inline-block;
@@ -706,17 +704,15 @@ img {
         padding: 100px 0;
     }
     .footer-container{
-        display: flex;
-        align-items: baseline;
+        width: 1158px;
+        padding: 0 15px;
         gap: 0;
     }
     .footer-logo-box{
-        margin-right: 60px;
-        margin-bottom: 0;
+        margin-right: 120px;
     }
     .footer-socials-box{
-        margin-right: 40px;
-        margin-bottom: 0;
+        margin-right: 80px;
     }
     .footer-logo-box,
     .footer-text,
